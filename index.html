@@ -9,33 +9,35 @@
 </head>
 <body>
     <header>
-        <h1>Recetario 1ºDAM</h1>
+        <a href="index.html"><h1>Recetario 1ºDAM</h1></a>
         <navbar class="headerNav">
-            <a href="index.html">Inicio</a>
-            <a href="recipeList.html">Recetas</a>
-            <a href="">Sube tu Receta</a>
-            <a href="">Tu cuenta</a>
+            <a href="index.html" class="bold">Inicio</a>
+            <a href="recipeListSquare.html">Recetas</a>
+            <a href="uploadRecipe.html">Sube tu Receta</a>
+            
         </navbar>
     </header>
 
     <main id="indexMain">
         <div id="indexMainContainer">
+            <div class="recipeInsideBorder"></div>
             <h1>Todas nuestras recetas artesanales.</h1>
             <section class="categories">
+                <!-- Me hubiera gustado poder filtrarlas, pero con puro html y css seria copiar una  y otra vez el mismo html asi que simplemente lo dejaré, como posible desicion de diseño para un futuro. -->
                 <a href="recipeListSquare.html" class="category">
-                    <img class="categoryImage" src="images/comida.jpg" alt="">
+                    <img class="categoryImage" src="images/all.jpg" alt="">
                     <span class="categoryName">Todas las recetas</span>
                 </a>
-                <a href="" class="category">
-                    <img class="categoryImage" src="images/comida.jpg" alt="">
+                <a href="recipeListSquare.html" class="category">
+                    <img class="categoryImage" src="images/firsts.jpg" alt="">
                     <span class="categoryName">Primeros</span>
                 </a>
-                <a href="" class="category">
-                    <img class="categoryImage" src="images/comida.jpg" alt="">
+                <a href="recipeListSquare.html" class="category">
+                    <img class="categoryImage" src="images/principal.jpg" alt="">
                     <span class="categoryName">Principales</span>
                 </a>
-                <a href="" class="category">
-                    <img class="categoryImage" src="images/comida.jpg" alt="">
+                <a href="recipeListSquare.html" class="category">
+                    <img class="categoryImage" src="images/desserts.jpg" alt="">
                     <span class="categoryName">Postres</span>
                 </a>
             </section>
@@ -43,17 +45,17 @@
             <section class="popularRecipesContainer">
                 <h1 class="popularTitle">Recetas más populares.</h1>
                 <div class="popularRecipes">
-                    <a href="" class="popularRecipe">
-                        <img class="recipeImageThumbnail" src="images/comida.jpg" alt="">
-                        <span class="popularRecipeName">Receta 1</span>
+                    <a href="recipe3.html" class="popularRecipe">
+                        <img class="recipeImageThumbnail" src="images/recipes/recipe3.jpg" alt="">
+                        <span class="popularRecipeName">Tortilla de papas</span>
                     </a>
-                    <a href="" class="popularRecipe">
-                        <img class="recipeImageThumbnail" src="images/comida.jpg" alt="">
-                        <span class="popularRecipeName">Receta 2</span>
+                    <a href="recipe4.html" class="popularRecipe">
+                        <img class="recipeImageThumbnail" src="images/recipes/recipe4.jpg" alt="">
+                        <span class="popularRecipeName">Pasta Carbonara</span>
                     </a>
-                    <a href="" class="popularRecipe">
-                        <img class="recipeImageThumbnail" src="images/comida.jpg" alt="">
-                        <span class="popularRecipeName">Receta 3</span>
+                    <a href="recipe8.html" class="popularRecipe">
+                        <img class="recipeImageThumbnail" src="images/recipes/recipe8.jpg" alt="">
+                        <span class="popularRecipeName">Brownie de chocolate</span>
                     </a>
                 </div> 
             </section>

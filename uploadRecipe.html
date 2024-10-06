@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Receta1</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Recetario 1ºDAM</h1></a>
+        <navbar class="headerNav">
+            <a href="index.html">Inicio</a>
+            <a href="recipeListSquare.html">Recetas</a>
+            <a href="uploadRecipe.html" class="bold">Sube tu Receta</a>
+            
+        </navbar>
+    </header>
+
+    <main class="recipeContainer">
+        <div class="recipe">
+            <div class="recipeInsideBorder"></div>
+            <form id="uploadRecipeForm" action="">
+
+                <label for="recipeName">Nombre de la receta</label>
+                <input type="text" id="recipeName" name="recipeName" placeholder="Introduce el nombre de la receta" required>
+
+                <label for="recipeImage">Imagen de la receta</label>
+                <input type="file" id="recipeImage" name="recipeImage" accept="image/*" required>
+
+                <label for="ingredients">Ingredientes</label>
+                <textarea id="ingredients" name="ingredients" placeholder="Escribe los ingredientes separados por comas" required></textarea>
+
+                <label for="instructions">Preparación</label>
+                <textarea id="instructions" name="instructions" placeholder="Escribe las instrucciones paso a paso" required></textarea>
+
+                <div class="tableContainer">
+                    <table class="allergensTable">
+                        <caption>Selecciona los alérgenos</caption>
+                        <tr>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="gluten" name="allergens" value="gluten">
+                                    <label for="gluten">
+                                        <img class="allergen" src="images/allergens/gluten.png" alt="Gluten">
+                                    </label>
+                                    <span class="tooltiptext">Gluten</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="crustaceos" name="allergens" value="crustaceos">
+                                    <label for="crustaceos">
+                                        <img class="allergen" src="images/allergens/crustaceos.png" alt="Crustáceos">
+                                    </label>
+                                    <span class="tooltiptext">Crustáceos</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="huevos" name="allergens" value="huevos">
+                                    <label for="huevos">
+                                        <img class="allergen" src="images/allergens/huevos.png" alt="Huevos">
+                                    </label>
+                                    <span class="tooltiptext">Huevos</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="pescado" name="allergens" value="pescado">
+                                    <label for="pescado">
+                                        <img class="allergen" src="images/allergens/pescado.png" alt="Pescado">
+                                    </label>
+                                    <span class="tooltiptext">Pescado</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="cacahuetes" name="allergens" value="cacahuetes">
+                                    <label for="cacahuetes">
+                                        <img class="allergen" src="images/allergens/cacahuetes.png" alt="Cacahuetes">
+                                    </label>
+                                    <span class="tooltiptext">Cacahuetes</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="soja" name="allergens" value="soja">
+                                    <label for="soja">
+                                        <img class="allergen" src="images/allergens/soja.png" alt="Soja">
+                                    </label>
+                                    <span class="tooltiptext">Soja</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="lacteos" name="allergens" value="lacteos">
+                                    <label for="lacteos">
+                                        <img class="allergen" src="images/allergens/lacteos.png" alt="Lácteos">
+                                    </label>
+                                    <span class="tooltiptext">Lácteos</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="frutosSecos" name="allergens" value="frutosSecos">
+                                    <label for="frutosSecos">
+                                        <img class="allergen" src="images/allergens/frutosSecos.png" alt="Frutos Secos">
+                                    </label>
+                                    <span class="tooltiptext">Frutos Secos</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="apio" name="allergens" value="apio">
+                                    <label for="apio">
+                                        <img class="allergen" src="images/allergens/apio.png" alt="Apio">
+                                    </label>
+                                    <span class="tooltiptext">Apio</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="mostaza" name="allergens" value="mostaza">
+                                    <label for="mostaza">
+                                        <img class="allergen" src="images/allergens/mostaza.png" alt="Mostaza">
+                                    </label>
+                                    <span class="tooltiptext">Mostaza</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="sesamo" name="allergens" value="sesamo">
+                                    <label for="sesamo">
+                                        <img class="allergen" src="images/allergens/sesamo.png" alt="Sésamo">
+                                    </label>
+                                    <span class="tooltiptext">Sésamo</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="sulfitos" name="allergens" value="sulfitos">
+                                    <label for="sulfitos">
+                                        <img class="allergen" src="images/allergens/sulfitos.png" alt="Sulfitos">
+                                    </label>
+                                    <span class="tooltiptext">Sulfitos</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="altramuz" name="allergens" value="altramuz">
+                                    <label for="altramuz">
+                                        <img class="allergen" src="images/allergens/altramuz.png" alt="Altramuz">
+                                    </label>
+                                    <span class="tooltiptext">Altramuz</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tooltip">
+                                    <input type="checkbox" id="moluscos" name="allergens" value="moluscos">
+                                    <label for="moluscos">
+                                        <img class="allergen" src="images/allergens/moluscos.png" alt="Moluscos">
+                                    </label>
+                                    <span class="tooltiptext">Moluscos</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <input type="submit" value="Subir Receta">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
